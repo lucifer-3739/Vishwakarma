@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@theme {
+  --font-cinzel: var(--font-cinzel), serif;
+  --font-playfair: var(--font-playfair), serif;
+  --font-sans: var(--font-jakarta), sans-serif;
+  --font-jakarta: var(--font-jakarta), sans-serif;
+
+  --color-saffron-50: #fff7ed;
+  --color-saffron-100: #ffedd5;
+  --color-saffron-200: #fed7aa;
+  --color-saffron-300: #fdba74;
+  --color-saffron-400: #fb923c;
+  --color-saffron-500: #f97316;
+  --color-saffron-600: #ea580c;
+  --color-saffron-700: #c2410c;
+  --color-saffron-800: #9a3412;
+  --color-saffron-900: #7c2d12;
+
+  --color-royal-950: #070b19;
+  --color-royal-900: #0d1730;
+  --color-royal-800: #142247;
+  --color-royal-700: #1d3268;
+  --color-royal-600: #294489;
+
+  --color-gold-300: #fde68a;
+  --color-gold-400: #facc15;
+  --color-gold-500: #eab308;
+  --color-gold-600: #ca8a04;
+  --color-gold-700: #a16207;
+  --color-gold-800: #854d0e;
+}
+
+:root {
+  --font-cinzel: "Cinzel", serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse-slow {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 40s linear infinite;
+}
+
+.animate-spin-reverse-slow {
+  animation: spin-reverse-slow 50s linear infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 5s ease-in-out infinite;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #d97706 0%, #d4af37 40%, #fbbf24 60%, #b45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-shimmer-border {
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.2), rgba(245, 158, 11, 0.8), rgba(212, 175, 55, 0.2));
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+.marigold-glow {
+  box-shadow: 0 0 35px -5px rgba(234, 88, 12, 0.25);
+}
+
+.gold-glow {
+  box-shadow: 0 0 30px -5px rgba(212, 175, 55, 0.3);
+}
+
+.mandala-pattern {
+  background-color: #FAF7F2;
+  background-image: radial-gradient(rgba(217, 119, 6, 0.08) 1px, transparent 1px), radial-gradient(rgba(14, 30, 64, 0.04) 1px, #FAF7F2 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B45309;
+}
