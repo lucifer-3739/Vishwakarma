@@ -22,7 +22,7 @@ export default function Navbar() {
     { name: "Location", href: "#location" },
   ];
 
-  const mapsUrl = "https://maps.app.goo.gl/8vGVq1SB6caVnh5p9";
+  const mapsUrl = "https://maps.app.goo.gl/XofsLJkqFawW4btX9";
 
   return (
     <header

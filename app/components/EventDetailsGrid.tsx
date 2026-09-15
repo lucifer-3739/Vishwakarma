@@ -5,7 +5,7 @@ import { Calendar, Clock, MapPin, Video, Navigation, Copy, Check, ExternalLink, 
 
 export default function EventDetailsGrid() {
   const [copied, setCopied] = useState(false);
-  const mapsUrl = "https://maps.app.goo.gl/8vGVq1SB6caVnh5p9";
+  const mapsUrl = "https://maps.app.goo.gl/XofsLJkqFawW4btX9";
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(mapsUrl);

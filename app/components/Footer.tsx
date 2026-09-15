@@ -3,7 +3,7 @@
 import { MapPin, Phone, Mail, Share2, Sparkles } from "lucide-react";
 
 export default function Footer() {
-  const mapsUrl = "https://maps.app.goo.gl/8vGVq1SB6caVnh5p9";
+  const mapsUrl = "https://maps.app.goo.gl/XofsLJkqFawW4btX9";
 
   const handleShareWhatsApp = () => {
     const text = encodeURIComponent(

@@ -91,7 +91,7 @@ export default function RsvpSection() {
     const text = encodeURIComponent(
       `🎉 I have confirmed my RSVP for Vishwakarma Puja 2026 (Hosted by Ram Sharma)!\n\n` +
       `📅 Sept 17: Puja (09:30 AM) | Sept 18: Visarjan (06:00 PM)\n` +
-      `📍 Venue: https://maps.app.goo.gl/8vGVq1SB6caVnh5p9\n` +
+      `📍 Venue: https://maps.app.goo.gl/XofsLJkqFawW4btX9\n` +
       `Pass Ref: ${confirmationCode}`
     );
     window.open(`https://wa.me/?text=${text}`, "_blank");
